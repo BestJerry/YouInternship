@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/TwelveDp"
+    android:orientation="vertical"
+    tools:context=".view.DeliverPositionActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground_Blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_position_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/TwelveDp"
+                    android:textColor="@color/colorText_White"
+                    android:textSize="@dimen/TwentyFourDp"
+                    tools:text="Android开发实习生" />
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TwelveDp"
+                    android:layout_marginStart="@dimen/TwelveDp"
+                    android:layout_marginTop="@dimen/SixDp"
+                    android:textColor="@color/colorText_White"
+                    android:textSize="@dimen/SixteenSp"
+                    tools:text="阿里巴巴" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_1"
+                android:layout_marginEnd="@dimen/TwelveDp"
+                android:layout_marginStart="@dimen/TwelveDp"
+                android:layout_marginTop="@dimen/TwelveDp">
+
+                <TextView
+                    android:id="@+id/tv_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    tools:text="杭州" />
+
+                <TextView
+                    android:id="@+id/tv_work_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    tools:text="5天/周" />
+
+                <TextView
+                    android:id="@+id/tv_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    tools:text="100-200/天" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_2"
+                android:layout_margin="@dimen/TwelveDp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_position_description_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职位描述："
+                    android:textSize="@dimen/SixteenSp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_position_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    tools:text="ssssssssssss" />
+
+                <TextView
+                    android:id="@+id/tv_position_require_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    android:text="职位要求："
+                    android:textSize="@dimen/SixteenSp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_position_require"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    tools:text="ssssssssssssssssss" />
+
+                <TextView
+                    android:id="@+id/tv_deadline_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    android:text="截止日期："
+                    android:textSize="@dimen/SixteenSp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/tv_deadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    tools:text="ssssssssssssss" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_3"
+                android:layout_marginBottom="@dimen/TwentyFourDp"
+                android:layout_marginEnd="@dimen/TwelveDp"
+                android:layout_marginStart="@dimen/TwelveDp">
+
+                <TextView
+                    android:id="@+id/tv_company_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/EighteenSp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    tools:text="阿里巴巴" />
+
+                <TextView
+                    android:id="@+id/tv_homepage_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_company_name_2"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    android:text="主页："
+                    android:textSize="@dimen/SixteenSp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_homepage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_homepage_title"
+                    android:layout_marginTop="@dimen/SixDp"
+                    tools:text="ssssssssssssss" />
+
+                <TextView
+                    android:id="@+id/tv_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_homepage"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    android:text="地址："
+                    android:textSize="@dimen/SixteenSp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address_title"
+                    android:layout_marginTop="@dimen/SixDp"
+                    tools:text="ssssssssssssss" />
+
+                <TextView
+                    android:id="@+id/tv_introduction_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address"
+                    android:layout_marginTop="@dimen/TwelveDp"
+                    android:text="介绍："
+                    android:textSize="@dimen/SixteenSp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_introduction_title"
+                    android:layout_marginTop="@dimen/SixDp"
+                    tools:text="ssssssssssssss" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <Button
+                android:id="@+id/bt_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout_1"
+                android:layout_marginStart="@dimen/TwelveDp"
+                android:background="@color/colorText_red"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/FortyEightDp"
+                android:layout_marginBottom="@dimen/TwentyFourDp"
+                android:visibility="gone"
+                android:text="删除" />
+
+            <Button
+                android:id="@+id/bt_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout_1"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground_Yellow"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/TwentyFourDp"
+                android:text="收藏" />
+
+            <Button
+                android:id="@+id/bt_deliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout_1"
+                android:layout_marginStart="@dimen/TwelveDp"
+                android:layout_toEndOf="@id/bt_collect"
+                android:background="@color/colorBackground_Blue"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/TwentyFourDp"
+                android:text="投递" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

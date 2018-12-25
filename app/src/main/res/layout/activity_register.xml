@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground_DeepBule"
+    tools:context="com.example.jerry.view.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back_icon"
+        android:layout_marginTop="@dimen/TwentyFourDp"
+        android:layout_marginStart="@dimen/TwelveDp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/NinetySixDp"
+        android:text="@string/register_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorText_White"
+        android:textSize="@dimen/ThirtyTwoSp" />
+
+    <EditText
+        android:id="@+id/et_input_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_register_title"
+        android:layout_marginEnd="@dimen/ThirtyTwoDp"
+        android:layout_marginStart="@dimen/ThirtyTwoDp"
+        android:layout_marginTop="@dimen/ThirtyTwoDp"
+        android:hint="@string/input_phone_number"
+        android:textColorHint="@color/colorText_White"
+        android:textSize="@dimen/EighteenSp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:textColor="@color/colorText_White"
+        android:theme="@style/MyEditText" />
+
+    <EditText
+        android:id="@+id/et_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input_account"
+        android:layout_marginEnd="@dimen/ThirtyTwoDp"
+        android:layout_marginStart="@dimen/ThirtyTwoDp"
+        android:layout_marginTop="@dimen/ThirtyTwoDp"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorText_White"
+        android:textSize="@dimen/EighteenSp"
+        android:singleLine="true"
+        android:textColor="@color/colorText_White"
+        android:theme="@style/MyEditText" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/SixteenDp"
+        android:background="@drawable/login_button_background"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/colorBackground_Blue"
+        android:textSize="@dimen/EighteenSp" />
+
+    <TextView
+        android:id="@+id/tv_person_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/et_input_password"
+        android:layout_below="@id/bt_register"
+        android:layout_marginStart="@dimen/ThirtyTwoDp"
+        android:layout_marginTop="@dimen/ThirtyTwoDp"
+        android:text="@string/student_register"
+        android:textColor="@color/colorText_White"
+        android:textSize="@dimen/SixteenSp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/tv_company_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/et_input_password"
+        android:layout_below="@id/bt_register"
+        android:layout_marginEnd="@dimen/ThirtyTwoDp"
+        android:layout_marginTop="@dimen/ThirtyTwoDp"
+        android:text="@string/company_register"
+        android:textColor="@color/colorText_White"
+        android:textSize="@dimen/SixteenSp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</RelativeLayout>

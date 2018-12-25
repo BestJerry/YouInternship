@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/TwelveDp">
+
+    <TextView
+        android:id="@+id/tv_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="已通过，待沟通"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/TwelveDp"
+        android:textColor="@color/colorBackground_Green"/>
+
+    <TextView
+        android:id="@+id/tv_company_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应聘公司：" />
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_company_name_title"
+        android:layout_toEndOf="@id/tv_company_name_title"
+        tools:text="阿里巴巴" />
+
+    <TextView
+        android:id="@+id/tv_position_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_company_name"
+        android:layout_marginTop="@dimen/SixDp"
+        android:text="应聘职位：" />
+
+    <TextView
+        android:id="@+id/tv_position_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_position_name_title"
+        android:layout_toEndOf="@id/tv_position_name_title"
+        android:layout_toStartOf="@id/tv_information"
+        android:ellipsize="end"
+        tools:text="Android开发实习生" />
+
+    <TextView
+        android:id="@+id/tv_date_title"
+        android:text="投递日期："
+        android:layout_below="@id/tv_position_name"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/SixDp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_toEndOf="@id/tv_date_title"
+        android:layout_alignTop="@id/tv_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2018.3.27"/>
+
+</RelativeLayout>

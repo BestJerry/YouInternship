@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jerry.view.CompanyInfoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/TenDp"
+            android:layout_marginStart="@dimen/TenDp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/SixDp"
+                android:text="公司名称："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="1"
+                android:theme="@style/MyEditText_two"
+                android:textSize="@dimen/SixteenSp" />
+
+            <TextView
+                android:id="@+id/tv_homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_name"
+                android:layout_margin="@dimen/SixDp"
+                android:text="公司主页："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_homepage"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="1"
+                android:theme="@style/MyEditText_two"
+                android:textSize="@dimen/SixteenSp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_homepage"
+                android:layout_margin="@dimen/SixDp"
+                android:text="公司地址："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_address"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="1"
+                android:theme="@style/MyEditText_two"
+                android:textSize="@dimen/SixteenSp" />
+
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_address"
+                android:layout_margin="@dimen/SixDp"
+                android:text="公司介绍："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_introduction"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="3"
+                android:theme="@style/MyEditText_two"
+                android:textSize="@dimen/SixteenSp" />
+
+            <TextView
+                android:id="@+id/tv_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_introduction"
+                android:layout_margin="@dimen/SixDp"
+                android:text="上传凭证："
+                android:textSize="@dimen/EighteenSp" />
+
+            <ImageView
+                android:id="@+id/image_voucher"
+                android:layout_width="256dp"
+                android:layout_height="128dp"
+                android:layout_below="@+id/tv_voucher"
+                android:layout_margin="@dimen/SixDp"
+                android:src="@drawable/icon_plus"
+                android:scaleType="centerInside"
+                android:background="@drawable/border_line_background"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:id="@+id/bt_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText_White"
+                android:text="@string/complete"
+                android:textSize="@dimen/EighteenSp"
+                android:layout_below="@id/image_voucher"
+                android:layout_alignEnd="@id/et_introduction"
+                android:layout_margin="@dimen/TenDp"
+                android:background="@color/colorBackground_Green"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

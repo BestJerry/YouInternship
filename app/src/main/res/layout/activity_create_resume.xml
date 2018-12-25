@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CreateResumeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/TenDp"
+            android:layout_marginStart="@dimen/TenDp">
+
+            <TextView
+                android:id="@+id/tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/SixDp"
+                android:text="姓名："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_student_name"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="textPersonName"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_student_name"
+                android:layout_margin="@dimen/SixDp"
+                android:text="性别："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sex"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="text"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_sex"
+                android:layout_margin="@dimen/SixDp"
+                android:text="年龄："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_age"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="number"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/et_age"
+                android:layout_margin="@dimen/SixDp"
+                android:text="电话："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="phone"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/et_phone"
+                android:layout_margin="@dimen/SixDp"
+                android:text="邮箱："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_email"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="textEmailAddress"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/et_email"
+                android:layout_margin="@dimen/SixDp"
+                android:text="学校："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_school"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="text"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/et_school"
+                android:layout_margin="@dimen/SixDp"
+                android:text="专业："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_major"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="text"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_intention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/et_major"
+                android:layout_margin="@dimen/SixDp"
+                android:text="求职意向："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_intention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_intention"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="text"
+                android:minLines="1"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_project_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_intention"
+                android:layout_margin="@dimen/SixDp"
+                android:text="项目经历："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_project_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_project_exp"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="3"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_internship_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_project_exp"
+                android:layout_margin="@dimen/SixDp"
+                android:text="实习经历："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_internship_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_internship_exp"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="3"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_volunteer_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_internship_exp"
+                android:layout_margin="@dimen/SixDp"
+                android:text="志愿者经历："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_volunteer_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_volunteer_exp"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="3"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_honorary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_volunteer_exp"
+                android:layout_margin="@dimen/SixDp"
+                android:text="荣誉奖项："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_honorary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_honorary"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="3"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_honorary"
+                android:layout_margin="@dimen/SixDp"
+                android:text="兴趣爱好："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hobby"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="text"
+                android:minLines="3"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <TextView
+                android:id="@+id/tv_self_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_hobby"
+                android:layout_margin="@dimen/SixDp"
+                android:text="自我评价："
+                android:textSize="@dimen/EighteenSp" />
+
+            <EditText
+                android:id="@+id/et_self_evaluation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_self_evaluation"
+                android:layout_margin="@dimen/SixDp"
+                android:background="@drawable/edit_text_background"
+                android:minLines="3"
+                android:textSize="@dimen/SixteenSp"
+                android:theme="@style/MyEditText_two" />
+
+            <Button
+                android:id="@+id/bt_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/et_self_evaluation"
+                android:layout_below="@id/et_self_evaluation"
+                android:layout_margin="@dimen/TwelveDp"
+                android:background="@color/colorBackground_Green"
+                android:text="@string/complete"
+                android:textColor="@color/colorText_White"
+                android:textSize="@dimen/EighteenSp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

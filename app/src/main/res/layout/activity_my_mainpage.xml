@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground_Blue">
+
+        <ImageView
+            android:id="@+id/img_user_head_portrait"
+            android:layout_width="80dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ThirtyTwoDp"
+            android:background="@color/colorText_White"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_user_head_portrait"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/SixDp"
+            android:layout_marginTop="@dimen/SixDp"
+            android:textColor="@color/colorText_White"
+            android:textSize="@dimen/TwentyFourSp"
+            tools:text="Jerry" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recyclerview_my_mainpage_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/TwentyFourDp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
